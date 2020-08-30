@@ -4,7 +4,7 @@
 
 1.1 [x] [Android Studio, SDK, эмулятор и первое приложение](01_firstapp)
 
-1.2 [ ] [Ресурсы (обзор), View и ViewGroup (базовые layout’ы)](02_view)
+1.2 [x] [Ресурсы, View и ViewGroup](02_resources)
 
 1.3 [ ] [ConstraintLayout Mastering](03_contstraint_layout)
 
