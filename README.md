@@ -6,7 +6,7 @@
 
 1.2 [x] [Ресурсы, View и ViewGroup](02_resources)
 
-1.3 [ ] [ConstraintLayout Mastering](03_contstraint_layout)
+1.3 [x] [ConstraintLayout](03_contstraint_layout)
 
 ## Блок 2: Работа со списками и обработка событий
 
