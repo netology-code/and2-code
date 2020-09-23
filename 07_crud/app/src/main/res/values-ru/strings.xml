@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NMedia</string>
+    <string name="hello">Привет, Мир!</string>
+    <string name="description_post_author_avatar">Аватар автора поста</string>
+    <string name="description_post_menu">Меню поста</string>
+    <string name="description_post_like">Нравится</string>
+    <string name="description_post_share">Поделиться</string>
+    <string name="description_post_save">Сохранить</string>
+    <string name="menu_edit">Изменить</string>
+    <string name="menu_remove">Удалить</string>
+    <string name="post_text">Текст поста</string>
+    <string name="error_empty_content">Контент не может быть пустым</string>
+</resources>
