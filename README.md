@@ -26,7 +26,7 @@
 
 3.3 [x] [Хранение данных](10_storage)
 
-3.4 [ ] [Fragments, FragmentManager](11_fragments)
+3.4 [x] [Fragments, FragmentManager](11_fragments)
 
 ## Блок 4: SQL, уведомления и Push’и
 
