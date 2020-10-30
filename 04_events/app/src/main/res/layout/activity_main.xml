@@ -95,6 +95,17 @@
         app:layout_constraintTop_toBottomOf="@id/footer"
         app:srcCompat="@drawable/ic_like_24" />
 
+    <TextView
+        android:id="@+id/likeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:layout_marginStart="@dimen/text_spacing"
+        android:layout_marginTop="@dimen/common_spacing"
+        app:layout_constraintTop_toBottomOf="@id/footer"
+        app:layout_constraintStart_toEndOf="@+id/like"
+        />
+
     <ImageButton
         android:id="@+id/share"
         android:layout_width="wrap_content"
@@ -104,8 +115,42 @@
         android:background="@android:color/transparent"
         android:contentDescription="@string/description_post_share"
         app:layout_constraintTop_toBottomOf="@id/footer"
-        app:layout_constraintStart_toEndOf="@+id/like"
+        app:layout_constraintStart_toEndOf="@+id/likeCount"
         app:srcCompat="@drawable/ic_share_24" />
+
+    <TextView
+        android:id="@+id/shareCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:layout_marginStart="@dimen/text_spacing"
+        android:layout_marginTop="@dimen/common_spacing"
+        app:layout_constraintTop_toBottomOf="@id/footer"
+        app:layout_constraintStart_toEndOf="@+id/share"
+        />
+
+    <ImageButton
+        android:id="@+id/views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_spacing"
+        android:layout_marginEnd="@dimen/text_spacing"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/description_post_share"
+        app:layout_constraintTop_toBottomOf="@id/footer"
+        app:layout_constraintEnd_toStartOf="@id/viewsCount"
+        app:srcCompat="@drawable/ic_views_24" />
+
+    <TextView
+        android:id="@+id/viewsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:layout_marginStart="@dimen/text_spacing"
+        android:layout_marginTop="@dimen/common_spacing"
+        app:layout_constraintTop_toBottomOf="@id/footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

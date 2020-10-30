@@ -2,6 +2,7 @@ package ru.netology.nmedia
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import ru.netology.nmedia.databinding.ActivityMainBinding
 import ru.netology.nmedia.dto.Post
 
@@ -27,7 +28,16 @@ class MainActivity : AppCompatActivity() {
                 like?.setImageResource(R.drawable.ic_liked_24)
             }
 
+            root.setOnClickListener{
+                Log.d("stuff", "stuff")
+            }
+
+            avatar.setOnClickListener{
+                Log.d("stuff", "avatar")
+            }
+
             like?.setOnClickListener {
+                Log.d("stuff", "like")
                 post.likedByMe = !post.likedByMe
                 like.setImageResource(
                     if (post.likedByMe) R.drawable.ic_liked_24 else R.drawable.ic_like_24
