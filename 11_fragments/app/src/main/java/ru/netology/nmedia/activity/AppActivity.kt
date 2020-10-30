@@ -14,20 +14,20 @@ class AppActivity : AppCompatActivity(R.layout.activity_app) {
 
         intent?.let {
             if (it.action != Intent.ACTION_SEND) {
-               return@let
+                return@let
             }
 
             val text = it.getStringExtra(Intent.EXTRA_TEXT)
-            if (text?.isNotBlank() == true) {
-                intent.removeExtra(Intent.EXTRA_TEXT)
-                findNavController(R.id.nav_host_fragment)
-                    .navigate(
-                        R.id.action_feedFragment_to_newPostFragment,
-                        Bundle().apply {
-                            textArg = text
-                        }
-                    )
+            if (text?.isNotBlank() != true) {
+                return@let
             }
+            intent.removeExtra(Intent.EXTRA_TEXT)
+            findNavController(R.id.nav_host_fragment).navigate(
+                R.id.action_feedFragment_to_newPostFragment,
+                Bundle().apply {
+                    textArg = text
+                }
+            )
         }
     }
 }
