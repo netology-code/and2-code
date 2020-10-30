@@ -30,9 +30,9 @@
 
 ## Блок 4: SQL, уведомления и Push’и
 
-4.1 [ ] [SQL и SQLite](12_sql)
+4.1 [x] [SQL и SQLite](12_sql)
 
-4.2 [ ] [Библиотека Room](13_room)
+4.2 [x] [Библиотека Room](13_room)
 
 4.3 [ ] [Notifications & Pushes](14_pushes)
 
