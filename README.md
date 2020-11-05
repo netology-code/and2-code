@@ -34,6 +34,6 @@
 
 4.2 [x] [Библиотека Room](13_room)
 
-4.3 [ ] [Notifications & Pushes](14_pushes)
+4.3 [x] [Notifications & Pushes](14_pushes)
 
 По всем вопросам: coursar
