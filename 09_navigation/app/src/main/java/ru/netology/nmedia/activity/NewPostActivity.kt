@@ -2,9 +2,8 @@ package ru.netology.nmedia.activity
 
 import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.TextUtils
+import androidx.appcompat.app.AppCompatActivity
 import ru.netology.nmedia.databinding.ActivityNewPostBinding
 
 class NewPostActivity : AppCompatActivity() {
@@ -15,7 +14,7 @@ class NewPostActivity : AppCompatActivity() {
         binding.edit.requestFocus();
         binding.ok.setOnClickListener {
             val intent = Intent()
-            if (TextUtils.isEmpty(binding.edit.text)) {
+            if (binding.edit.text.isNullOrBlank()) {
                 setResult(Activity.RESULT_CANCELED, intent)
             } else {
                 val content = binding.edit.text.toString()

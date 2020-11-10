@@ -20,8 +20,8 @@ class IntentHandlerActivity : AppCompatActivity() {
             }
 
             val text = it.getStringExtra(Intent.EXTRA_TEXT)
-            if (text == null || text.isBlank()) {
-                Snackbar.make(binding.root, R.string.no_message, LENGTH_INDEFINITE)
+            if (text.isNullOrBlank()) {
+                Snackbar.make(binding.root, R.string.error_empty_content, LENGTH_INDEFINITE)
                     .setAction(android.R.string.ok) {
                         finish()
                     }
