@@ -14,7 +14,7 @@
 
 2.2 [x] [MVVM](05_mvvm)
 
-2.3 [x] [Отображение списков: RecyclerView](06_lists)
+2.3 [x] [Отображение списков: RecyclerView](06_recyclerview)
 
 2.4 [x] [CRUD: списки, добавление, удаление, изменение](07_crud)
 
