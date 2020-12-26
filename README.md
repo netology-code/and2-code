@@ -36,4 +36,3 @@
 
 4.3 [x] [Notifications & Pushes](14_pushes)
 
-По всем вопросам: coursar
