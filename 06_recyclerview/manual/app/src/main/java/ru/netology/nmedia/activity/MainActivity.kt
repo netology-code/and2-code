@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val viewModel: PostViewModel by viewModels()
-        viewModel.data.observe(this, { posts ->
+        viewModel.data.observe(this) { posts ->
             binding.container.removeAllViews()
             posts.map { post ->
                 CardPostBinding.inflate(layoutInflater).apply {
@@ -32,6 +32,6 @@ class MainActivity : AppCompatActivity() {
             }.forEach {
                 binding.container.addView(it)
             }
-        })
+        }
     }
 }
