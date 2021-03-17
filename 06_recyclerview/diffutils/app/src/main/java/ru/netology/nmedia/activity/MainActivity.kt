@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity() {
             viewModel.likeById(it.id)
         }
         binding.list.adapter = adapter
-        viewModel.data.observe(this, { posts ->
+        viewModel.data.observe(this) { posts ->
             adapter.submitList(posts)
-        })
+        }
     }
 }
