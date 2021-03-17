@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val viewModel: PostViewModel by viewModels()
-        viewModel.data.observe(this, { post ->
+        viewModel.data.observe(this) { post ->
             with(binding) {
                 author.text = post.author
                 published.text = post.published
@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
                     if (post.likedByMe) R.drawable.ic_liked_24 else R.drawable.ic_like_24
                 )
             }
-        })
+        }
         binding.like.setOnClickListener {
             viewModel.like()
         }
