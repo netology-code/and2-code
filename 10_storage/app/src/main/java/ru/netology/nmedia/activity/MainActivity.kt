@@ -1,8 +1,8 @@
 package ru.netology.nmedia.activity
 
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import androidx.activity.result.launch
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import ru.netology.nmedia.R
@@ -13,8 +13,6 @@ import ru.netology.nmedia.dto.Post
 import ru.netology.nmedia.viewmodel.PostViewModel
 
 class MainActivity : AppCompatActivity() {
-    private val newPostRequestCode = 1
-    private val viewModel: PostViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,6 +34,8 @@ class MainActivity : AppCompatActivity() {
 //                        .show()
 //                }
 //        }
+
+        val viewModel: PostViewModel by viewModels()
 
         val adapter = PostsAdapter(object : OnInteractionListener {
             override fun onEdit(post: Post) {
@@ -67,25 +67,14 @@ class MainActivity : AppCompatActivity() {
             adapter.submitList(posts)
         })
 
-        binding.fab.setOnClickListener {
-            val intent = Intent(this@MainActivity, NewPostActivity::class.java)
-            startActivityForResult(intent, newPostRequestCode)
+        val newPostLauncher = registerForActivityResult(NewPostResultContract()) { result ->
+            result ?: return@registerForActivityResult
+            viewModel.changeContent(result)
+            viewModel.save()
         }
-    }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        when (requestCode) {
-            newPostRequestCode -> {
-                if (resultCode != Activity.RESULT_OK) {
-                    return
-                }
-
-                data?.getStringExtra(Intent.EXTRA_TEXT)?.let {
-                    viewModel.changeContent(it)
-                    viewModel.save()
-                }
-            }
+        binding.fab.setOnClickListener {
+            newPostLauncher.launch()
         }
     }
 }
