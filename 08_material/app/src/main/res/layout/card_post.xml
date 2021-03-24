@@ -89,6 +89,18 @@
             app:barrierDirection="bottom"
             app:constraint_referenced_ids="content" />
 
+        <!--com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/description_post_like"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/footer"
+            android:button="@drawable/ic_like_24dp"
+            tools:checked="@sample/posts.json/data/likedByMe"
+            tools:text="@sample/posts.json/data/likes"
+            style="@style/Widget.AppTheme.LikeCheckBox"/-->
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/like"
             android:layout_width="wrap_content"
@@ -100,7 +112,7 @@
             app:icon="@drawable/ic_like_24dp"
             tools:checked="@sample/posts.json/data/likedByMe"
             tools:text="@sample/posts.json/data/likes"
-            style="@style/Widget.AppTheme.LikeCheckBox"
+            style="@style/Widget.AppTheme.LikeButton"
             />
 
         <com.google.android.material.button.MaterialButton
