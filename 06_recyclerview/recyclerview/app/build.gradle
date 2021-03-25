@@ -45,7 +45,7 @@ dependencies {
     def ext_junit_version = "1.1.2"
     def espresso_core_version = "3.3.0"
     def activity_version = "1.2.1"
-    def lifecycle_version = "2.3.0"
+    def lifecycle_version = "2.3.1"
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
