@@ -16,7 +16,8 @@
         android:layout_width="@dimen/posts_avatar_size"
         android:layout_height="@dimen/posts_avatar_size"
         android:layout_marginBottom="@dimen/common_spacing"
-        android:contentDescription="@string/description_post_author_avatar" />
+        android:contentDescription="@string/description_post_author_avatar"
+        android:src="@drawable/ic_netology_48dp" />
 
     <TextView
         android:id="@+id/author"
