@@ -11,7 +11,6 @@ import java.io.FileInputStream
 fun main() {
     val options = FirebaseOptions.builder()
         .setCredentials(GoogleCredentials.fromStream(FileInputStream("fcm.json")))
-        .setDatabaseUrl(dbUrl)
         .build()
 
     FirebaseApp.initializeApp(options)
