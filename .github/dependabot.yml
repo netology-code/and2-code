@@ -1,0 +1,138 @@
+version: 2
+updates:
+- package-ecosystem: gradle
+  directory: "/01_firstapp"
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - amostyaev
+- package-ecosystem: gradle
+  directory: "/02_resources"
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - amostyaev
+- package-ecosystem: gradle
+  directory: "/03_constraintlayout"
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - amostyaev
+- package-ecosystem: gradle
+  directory: "/04_events"
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - amostyaev
+- package-ecosystem: gradle
+  directory: "/05_mvvm"
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - amostyaev
+- package-ecosystem: gradle
+  directory: "/06_recyclerview/diffutils"
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - amostyaev
+- package-ecosystem: gradle
+  directory: "/06_recyclerview/manual"
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - amostyaev
+- package-ecosystem: gradle
+  directory: "/06_recyclerview/recyclerview"
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - amostyaev
+- package-ecosystem: gradle
+  directory: "/07_crud"
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - amostyaev
+- package-ecosystem: gradle
+  directory: "/08_material"
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - amostyaev
+- package-ecosystem: gradle
+  directory: "/09_navigation"
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - amostyaev
+- package-ecosystem: gradle
+  directory: "/10_storage"
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - amostyaev
+- package-ecosystem: gradle
+  directory: "/11_fragments"
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - amostyaev
+- package-ecosystem: gradle
+  directory: "/12_sql"
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - amostyaev
+- package-ecosystem: gradle
+  directory: "/13_room"
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - amostyaev
+- package-ecosystem: gradle
+  directory: "/14_pushes"
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - amostyaev
+- package-ecosystem: gradle
+  directory: "/push-sender"
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - amostyaev
