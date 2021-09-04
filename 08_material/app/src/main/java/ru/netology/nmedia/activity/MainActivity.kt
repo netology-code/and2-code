@@ -1,9 +1,6 @@
 package ru.netology.nmedia.activity
 
-import android.app.Activity
-import android.content.Intent
 import android.os.Bundle
-import android.text.TextUtils
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -16,7 +13,6 @@ import ru.netology.nmedia.util.AndroidUtils
 import ru.netology.nmedia.viewmodel.PostViewModel
 
 class MainActivity : AppCompatActivity() {
-    private val newPostRequestCode = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
