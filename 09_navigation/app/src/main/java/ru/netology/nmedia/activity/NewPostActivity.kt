@@ -11,7 +11,7 @@ class NewPostActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityNewPostBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.edit.requestFocus();
+        binding.edit.requestFocus()
         binding.ok.setOnClickListener {
             val intent = Intent()
             if (binding.edit.text.isNullOrBlank()) {
