@@ -46,7 +46,7 @@ class AppActivity : AppCompatActivity(R.layout.activity_app) {
                 return@with
             }
             if (isUserResolvableError(code)) {
-                getErrorDialog(this@AppActivity, code, 9000).show()
+                getErrorDialog(this@AppActivity, code, 9000)?.show()
                 return
             }
             Toast.makeText(this@AppActivity, R.string.google_play_unavailable, Toast.LENGTH_LONG)
