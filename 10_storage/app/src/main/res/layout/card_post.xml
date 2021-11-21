@@ -102,7 +102,7 @@
             app:icon="@drawable/ic_like_24dp"
             tools:checked="@sample/posts.json/data/likedByMe"
             tools:text="@sample/posts.json/data/likes"
-            style="@style/Widget.AppTheme.LikeCheckBox"
+            style="@style/Widget.AppTheme.LikeButton"
             />
 
         <com.google.android.material.button.MaterialButton

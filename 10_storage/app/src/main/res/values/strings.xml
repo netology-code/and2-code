@@ -12,5 +12,5 @@
     <string name="error_empty_content">Content can\'t be empty</string>
     <string name="chooser_share_post">Share post</string>
     <string name="add_post">Add post</string>
-    <string name="save">Сохранить</string>
+    <string name="save">Save</string>
 </resources>
