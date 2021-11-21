@@ -77,4 +77,3 @@
         tools:text="@sample/posts.json/data/content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
