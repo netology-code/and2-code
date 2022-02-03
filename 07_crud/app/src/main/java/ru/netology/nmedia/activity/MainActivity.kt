@@ -1,7 +1,6 @@
 package ru.netology.nmedia.activity
 
 import android.os.Bundle
-import android.text.TextUtils
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity

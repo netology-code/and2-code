@@ -63,9 +63,9 @@ class MainActivity : AppCompatActivity() {
             }
         })
         binding.list.adapter = adapter
-        viewModel.data.observe(this, { posts ->
+        viewModel.data.observe(this) { posts ->
             adapter.submitList(posts)
-        })
+        }
 
         val newPostLauncher = registerForActivityResult(NewPostResultContract()) { result ->
             result ?: return@registerForActivityResult

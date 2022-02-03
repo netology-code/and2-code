@@ -1,7 +1,6 @@
 package ru.netology.nmedia.dao
 
 import ru.netology.nmedia.dto.Post
-import java.io.Closeable
 
 interface PostDao {
     fun getAll(): List<Post>
