@@ -3,6 +3,8 @@ registries:
   maven-google:
     type: maven-repository
     url: https://maven.google.com
+    username: ""
+    password: ""
 updates:
 - package-ecosystem: gradle
   directory: "/01_firstapp"
