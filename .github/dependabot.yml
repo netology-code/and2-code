@@ -8,6 +8,8 @@ registries:
 updates:
 - package-ecosystem: gradle
   directory: "/01_firstapp"
+  registries:
+      - maven-google
   schedule:
     interval: daily
     time: "02:00"
@@ -16,6 +18,8 @@ updates:
   - amostyaev
 - package-ecosystem: gradle
   directory: "/02_resources"
+  registries:
+      - maven-google
   schedule:
     interval: daily
     time: "02:00"
@@ -24,6 +28,8 @@ updates:
   - amostyaev
 - package-ecosystem: gradle
   directory: "/03_constraintlayout"
+  registries:
+      - maven-google
   schedule:
     interval: daily
     time: "02:00"
@@ -32,6 +38,8 @@ updates:
   - amostyaev
 - package-ecosystem: gradle
   directory: "/04_events"
+  registries:
+      - maven-google
   schedule:
     interval: daily
     time: "02:00"
@@ -40,6 +48,8 @@ updates:
   - amostyaev
 - package-ecosystem: gradle
   directory: "/05_mvvm"
+  registries:
+      - maven-google
   schedule:
     interval: daily
     time: "02:00"
@@ -48,6 +58,8 @@ updates:
   - amostyaev
 - package-ecosystem: gradle
   directory: "/06_recyclerview/diffutils"
+  registries:
+      - maven-google
   schedule:
     interval: daily
     time: "02:00"
@@ -56,6 +68,8 @@ updates:
   - amostyaev
 - package-ecosystem: gradle
   directory: "/06_recyclerview/manual"
+  registries:
+      - maven-google
   schedule:
     interval: daily
     time: "02:00"
@@ -64,6 +78,8 @@ updates:
   - amostyaev
 - package-ecosystem: gradle
   directory: "/06_recyclerview/recyclerview"
+  registries:
+      - maven-google
   schedule:
     interval: daily
     time: "02:00"
@@ -72,6 +88,8 @@ updates:
   - amostyaev
 - package-ecosystem: gradle
   directory: "/07_crud"
+  registries:
+      - maven-google
   schedule:
     interval: daily
     time: "02:00"
@@ -80,6 +98,8 @@ updates:
   - amostyaev
 - package-ecosystem: gradle
   directory: "/08_material"
+  registries:
+      - maven-google
   schedule:
     interval: daily
     time: "02:00"
@@ -88,6 +108,8 @@ updates:
   - amostyaev
 - package-ecosystem: gradle
   directory: "/09_navigation"
+  registries:
+      - maven-google
   schedule:
     interval: daily
     time: "02:00"
@@ -96,6 +118,8 @@ updates:
   - amostyaev
 - package-ecosystem: gradle
   directory: "/10_storage"
+  registries:
+      - maven-google
   schedule:
     interval: daily
     time: "02:00"
@@ -104,6 +128,8 @@ updates:
   - amostyaev
 - package-ecosystem: gradle
   directory: "/11_fragments"
+  registries:
+      - maven-google
   schedule:
     interval: daily
     time: "02:00"
@@ -112,6 +138,8 @@ updates:
   - amostyaev
 - package-ecosystem: gradle
   directory: "/12_sql"
+  registries:
+      - maven-google
   schedule:
     interval: daily
     time: "02:00"
@@ -120,6 +148,8 @@ updates:
   - amostyaev
 - package-ecosystem: gradle
   directory: "/13_room"
+  registries:
+      - maven-google
   schedule:
     interval: daily
     time: "02:00"
@@ -128,6 +158,8 @@ updates:
   - amostyaev
 - package-ecosystem: gradle
   directory: "/14_pushes"
+  registries:
+      - maven-google
   schedule:
     interval: daily
     time: "02:00"
@@ -136,6 +168,8 @@ updates:
   - amostyaev
 - package-ecosystem: gradle
   directory: "/push-sender"
+  registries:
+      - maven-google
   schedule:
     interval: daily
     time: "02:00"
