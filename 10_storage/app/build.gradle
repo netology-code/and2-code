@@ -38,7 +38,7 @@ android {
 dependencies {
     def core_version = "1.7.0"
     def appcompat_version = "1.4.1"
-    def mdc_version = "1.6.0"
+    def mdc_version = "1.6.1"
     def constraintlayout_version = "2.1.4"
     def recyclerview_version = "1.2.1"
     def junit_version = "4.13.2"
