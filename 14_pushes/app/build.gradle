@@ -51,7 +51,7 @@ dependencies {
     def gson_version = "2.9.0"
     def nav_version = "2.4.2"
     def room_version = "2.4.2"
-    def firebase_version = "30.1.0"
+    def firebase_version = "30.2.0"
     def play_services_base_version = "18.0.1"
 
     implementation "androidx.core:core-ktx:$core_version"
