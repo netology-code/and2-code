@@ -47,7 +47,7 @@ dependencies {
     def activity_version = "1.4.0"
     def lifecycle_version = "2.4.1"
     def gson_version = "2.9.0"
-    def nav_version = "2.4.2"
+    def nav_version = "2.5.0"
 
     implementation "androidx.core:core-ktx:$core_version"
     implementation "androidx.appcompat:appcompat:$appcompat_version"
