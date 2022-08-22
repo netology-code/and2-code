@@ -12,5 +12,5 @@ repositories {
 dependencies {
     implementation 'org.jetbrains.kotlin:kotlin-stdlib'
     implementation 'com.google.firebase:firebase-admin:9.0.0'
-    implementation 'org.slf4j:slf4j-simple:1.7.36'
+    implementation 'org.slf4j:slf4j-simple:2.0.0'
 }
