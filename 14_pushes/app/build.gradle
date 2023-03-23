@@ -46,7 +46,7 @@ dependencies {
     def junit_version = "4.13.2"
     def ext_junit_version = "1.1.5"
     def espresso_core_version = "3.5.1"
-    def activity_version = "1.6.1"
+    def activity_version = "1.7.0"
     def lifecycle_version = "2.6.0"
     def gson_version = "2.10.1"
     def nav_version = "2.5.3"
