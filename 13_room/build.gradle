@@ -6,6 +6,12 @@ plugins {
     id 'org.jetbrains.kotlin.kapt' version '1.8.20' apply false
 }
 
+subprojects {
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile) {
+        kotlinOptions.jvmTarget = "1.8"
+    }
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }

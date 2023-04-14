@@ -5,6 +5,7 @@ plugins {
 }
 
 android {
+    namespace "ru.netology.nmedia"
     compileSdk 33
 
     defaultConfig {
