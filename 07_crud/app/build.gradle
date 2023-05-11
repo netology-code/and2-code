@@ -37,7 +37,7 @@ android {
 }
 
 dependencies {
-    def core_version = "1.10.0"
+    def core_version = "1.10.1"
     def appcompat_version = "1.6.1"
     def mdc_version = "1.9.0"
     def constraintlayout_version = "2.1.4"
