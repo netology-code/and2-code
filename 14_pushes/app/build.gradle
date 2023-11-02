@@ -50,7 +50,7 @@ dependencies {
     def activity_version = "1.8.0"
     def lifecycle_version = "2.6.2"
     def gson_version = "2.10.1"
-    def nav_version = "2.7.4"
+    def nav_version = "2.7.5"
     def room_version = "2.6.0"
     def firebase_version = "32.5.0"
     def play_services_base_version = "18.2.0"
