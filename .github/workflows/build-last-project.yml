@@ -9,7 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    defaults:
+      run:
+        working-directory: ./14_pushes
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
@@ -21,8 +23,8 @@ jobs:
 
       - name: Build
         run: |
-          chmod +x ./14_pushes/gradlew
-          ./14_pushes/gradlew build
+          chmod +x ./gradlew
+          ./gradlew build
 
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
