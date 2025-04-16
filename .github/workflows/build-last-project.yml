@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./02_resources
+        working-directory: ./03_constraintlayout
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
