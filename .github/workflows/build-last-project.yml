@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./04_events
+        working-directory: ./05_mvvm
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
