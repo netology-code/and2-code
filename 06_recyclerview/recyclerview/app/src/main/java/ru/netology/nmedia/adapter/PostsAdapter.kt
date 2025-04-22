@@ -38,6 +38,7 @@ class PostViewHolder(
             author.text = post.author
             published.text = post.published
             content.text = post.content
+            likeCount.text = post.likes.toString()
 //            like.setImageResource(
 //                if (post.likedByMe) R.drawable.ic_liked_24 else R.drawable.ic_like_24
 //            )
