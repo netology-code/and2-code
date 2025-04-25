@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./08_material
+        working-directory: ./09_navigation
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
