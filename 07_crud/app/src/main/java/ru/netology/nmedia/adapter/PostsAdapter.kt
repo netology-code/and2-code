@@ -14,6 +14,7 @@ interface OnInteractionListener {
     fun onLike(post: Post) {}
     fun onEdit(post: Post) {}
     fun onRemove(post: Post) {}
+    fun onShare(post: Post) {}
 }
 
 class PostsAdapter(
@@ -66,6 +67,10 @@ class PostViewHolder(
 
             like.setOnClickListener {
                 onInteractionListener.onLike(post)
+            }
+
+            share.setOnClickListener {
+                onInteractionListener.onShare(post)
             }
         }
     }
