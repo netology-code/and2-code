@@ -4,11 +4,6 @@
         <item name="iconTint">?attr/colorControlNormal</item>
     </style>
 
-    <style name="Widget.AppTheme.LikeCheckBox" parent="Widget.Material3.CompoundButton.CheckBox">
-        <item name="buttonTint">@color/like_checkbox_tint</item>
-        <item name="android:paddingStart">@dimen/checkbox_icon_padding</item>
-    </style>
-
     <style name="Widget.AppTheme.LikeButton" parent="Widget.Material3.Button.TextButton.Icon">
         <item name="iconTint">@color/like_checkbox_tint</item>
         <item name="android:minWidth">@dimen/icon_button_min_size</item>

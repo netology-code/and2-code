@@ -84,18 +84,6 @@
         app:barrierDirection="bottom"
         app:constraint_referenced_ids="content" />
 
-    <!--com.google.android.material.checkbox.MaterialCheckBox
-        android:id="@+id/like"
-        style="@style/Widget.AppTheme.LikeCheckBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:button="@drawable/ic_like_24"
-        android:contentDescription="@string/description_post_like"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/footer"
-        tools:checked="@sample/posts.json/data/likedByMe"
-        tools:text="@sample/posts.json/data/likes" /-->
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/like"
         style="@style/Widget.AppTheme.LikeButton"

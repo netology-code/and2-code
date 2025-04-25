@@ -10,27 +10,27 @@ import ru.netology.nmedia.dto.Post
 class PostRepositoryFileImpl(
     private val context: Context,
 ) : PostRepository {
-    private val gson = Gson()
-    private val type = TypeToken.getParameterized(List::class.java, Post::class.java).type
-    private val filename = "posts.json"
+
     private var nextId = 1L
     private var posts = emptyList<Post>()
+        set(value) {
+            field = value
+            sync()
+        }
     private val data = MutableLiveData(posts)
 
     init {
-        val file = context.filesDir.resolve(filename)
+        val file = context.filesDir.resolve(FILENAME)
         if (file.exists()) {
             // если файл есть - читаем
-            context.openFileInput(filename).bufferedReader().use {
+            context.openFileInput(FILENAME).bufferedReader().use {
                 posts = gson.fromJson(it, type)
+                nextId = (posts.maxOfOrNull { it.id } ?: 0) + 1
                 data.value = posts
             }
-        } else {
-            // если нет, записываем пустой массив
-            sync()
         }
     }
-    // для презентации убрали пустые строки
+
     override fun getAll(): LiveData<List<Post>> = data
 
     override fun save(post: Post) {
@@ -45,7 +45,6 @@ class PostRepositoryFileImpl(
                 )
             ) + posts
             data.value = posts
-            sync()
             return
         }
 
@@ -53,7 +52,6 @@ class PostRepositoryFileImpl(
             if (it.id != post.id) it else it.copy(content = post.content)
         }
         data.value = posts
-        sync()
     }
 
     override fun likeById(id: Long) {
@@ -64,18 +62,23 @@ class PostRepositoryFileImpl(
             )
         }
         data.value = posts
-        sync()
     }
 
     override fun removeById(id: Long) {
         posts = posts.filter { it.id != id }
         data.value = posts
-        sync()
     }
 
     private fun sync() {
-        context.openFileOutput(filename, Context.MODE_PRIVATE).bufferedWriter().use {
+        context.openFileOutput(FILENAME, Context.MODE_PRIVATE).bufferedWriter().use {
             it.write(gson.toJson(posts))
         }
+    }
+
+    companion object {
+        private const val FILENAME = "posts.json"
+
+        private val gson = Gson()
+        private val type = TypeToken.getParameterized(List::class.java, Post::class.java).type
     }
 }
