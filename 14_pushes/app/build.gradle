@@ -51,7 +51,7 @@ dependencies {
     def lifecycle_version = "2.9.1"
     def gson_version = "2.13.1"
     def nav_version = "2.9.0"
-    def room_version = "2.7.1"
+    def room_version = "2.7.2"
     def firebase_version = "33.15.0"
     def play_services_base_version = "18.7.0"
 
