@@ -6,26 +6,31 @@ import androidx.lifecycle.MutableLiveData
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import ru.netology.nmedia.dto.Post
+import androidx.core.content.edit
 
 class PostRepositorySharedPrefsImpl(
     context: Context,
 ) : PostRepository {
-    private val gson = Gson()
+
     private val prefs = context.getSharedPreferences("repo", Context.MODE_PRIVATE)
-    private val type = TypeToken.getParameterized(List::class.java, Post::class.java).type
-    private val key = "posts"
     private var nextId = 1L
     private var posts = emptyList<Post>()
+        set(value) {
+            field = value
+            sync()
+        }
     private val data = MutableLiveData(posts)
 
     init {
-        prefs.getString(key, null)?.let {
-            posts = gson.fromJson(it, type)
+        prefs.getString(KEY_POSTS, null)?.let { value ->
+            posts = gson.fromJson(value, type)
+            nextId = (posts.maxOfOrNull { it.id } ?: 0) + 1
             data.value = posts
         }
     }
-    // для презентации убрали пустые строки
+
     override fun getAll(): LiveData<List<Post>> = data
+
     override fun save(post: Post) {
         if (post.id == 0L) {
             // TODO: remove hardcoded author & published
@@ -38,7 +43,6 @@ class PostRepositorySharedPrefsImpl(
                 )
             ) + posts
             data.value = posts
-            sync()
             return
         }
 
@@ -46,8 +50,8 @@ class PostRepositorySharedPrefsImpl(
             if (it.id != post.id) it else it.copy(content = post.content)
         }
         data.value = posts
-        sync()
     }
+
     override fun likeById(id: Long) {
         posts = posts.map {
             if (it.id != id) it else it.copy(
@@ -56,17 +60,23 @@ class PostRepositorySharedPrefsImpl(
             )
         }
         data.value = posts
-        sync()
     }
+
     override fun removeById(id: Long) {
         posts = posts.filter { it.id != id }
         data.value = posts
-        sync()
     }
+
     private fun sync() {
-        with(prefs.edit()) {
-            putString(key, gson.toJson(posts))
-            apply()
+        prefs.edit {
+            putString(KEY_POSTS, gson.toJson(posts))
         }
+    }
+
+    companion object {
+        private const val KEY_POSTS = "posts"
+
+        private val gson = Gson()
+        private val type = TypeToken.getParameterized(List::class.java, Post::class.java).type
     }
 }

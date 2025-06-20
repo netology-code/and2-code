@@ -7,9 +7,7 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import ru.netology.nmedia.dto.Post
 
-class PostRepositoryFileImpl(
-    private val context: Context,
-) : PostRepository {
+class PostRepositoryFileImpl(private val context: Context) : PostRepository {
 
     private var nextId = 1L
     private var posts = emptyList<Post>()
