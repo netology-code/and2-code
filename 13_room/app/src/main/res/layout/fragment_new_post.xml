@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.NewPostFragment">
+    tools:context=".fragment.NewPostFragment">
 
-    <com.google.android.material.textfield.TextInputEditText
+    <EditText
         android:id="@+id/edit"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@android:color/transparent"
         android:gravity="start|top"
-        android:inputType="textMultiLine">
-    </com.google.android.material.textfield.TextInputEditText>
+        android:inputType="textMultiLine" />
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
@@ -27,6 +27,6 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/description_post_save"
         app:layout_anchor="@id/bottomAppBar"
-        app:srcCompat="@drawable/ic_ok_24dp" />
+        app:srcCompat="@drawable/ic_ok_24" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
