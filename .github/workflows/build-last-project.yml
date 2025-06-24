@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./13_room
+        working-directory: ./14_pushes
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
@@ -20,6 +20,11 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 17
+          
+      - name: Decode google-services.json
+        env:
+          FIREBASE_SECRET: ${{ secrets.FIREBASE_SECRET }}
+        run: echo $FIREBASE_SECRET > ./app/google-services.json    
 
       - name: Build
         run: |

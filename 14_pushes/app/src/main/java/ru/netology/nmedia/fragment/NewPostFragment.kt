@@ -1,4 +1,4 @@
-package ru.netology.nmedia.activity
+package ru.netology.nmedia.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -18,9 +18,7 @@ class NewPostFragment : Fragment() {
         var Bundle.textArg: String? by StringArg
     }
 
-    private val viewModel: PostViewModel by viewModels(
-        ownerProducer = ::requireParentFragment
-    )
+    private val viewModel: PostViewModel by viewModels(ownerProducer = ::requireParentFragment)
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -33,12 +31,10 @@ class NewPostFragment : Fragment() {
             false
         )
 
-        arguments?.textArg
-            ?.let(binding.edit::setText)
+        arguments?.textArg?.let(binding.edit::setText)
 
         binding.ok.setOnClickListener {
-            viewModel.changeContent(binding.edit.text.toString())
-            viewModel.save()
+            viewModel.save(binding.edit.text.toString())
             AndroidUtils.hideKeyboard(requireView())
             findNavController().navigateUp()
         }

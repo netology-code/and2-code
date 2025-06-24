@@ -5,9 +5,10 @@ import ru.netology.nmedia.dao.PostDao
 import ru.netology.nmedia.dto.Post
 import ru.netology.nmedia.entity.PostEntity
 
-class PostRepositoryImpl(
+class PostRepositoryRoomImpl(
     private val dao: PostDao,
 ) : PostRepository {
+
     override fun getAll() = dao.getAll().map { list ->
         list.map {
             it.toDto()
