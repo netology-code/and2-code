@@ -15,7 +15,7 @@ gson = "2.13.1"
 navigationFragmentKtx = "2.9.0"
 navigationUiKtx = "2.9.0"
 room = "2.7.2"
-firebase = "33.15.0"
+firebase = "33.16.0"
 playServices = "18.7.0"
 desugaring = "2.1.5"
 
