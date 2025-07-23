@@ -15,7 +15,7 @@ gson = "2.13.1"
 navigationFragmentKtx = "2.9.2"
 navigationUiKtx = "2.9.2"
 room = "2.7.2"
-firebase = "33.16.0"
+firebase = "34.0.0"
 playServices = "18.7.2"
 desugaring = "2.1.5"
 
@@ -34,7 +34,7 @@ androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation
 androidx-room = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 firebase = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase" }
-firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging-ktx" }
+firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging" }
 play-services = { group = "com.google.android.gms", name = "play-services-base", version.ref = "playServices" }
 desugaring = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "desugaring" }
 
