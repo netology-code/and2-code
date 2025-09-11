@@ -16,7 +16,7 @@ navigationFragmentKtx = "2.9.3"
 navigationUiKtx = "2.9.4"
 room = "2.7.2"
 firebase = "34.2.0"
-playServices = "18.7.2"
+playServices = "18.8.0"
 desugaring = "2.1.5"
 
 [libraries]
