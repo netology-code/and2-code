@@ -16,12 +16,10 @@ fun main() {
     FirebaseApp.initializeApp(options)
 
     val message = Message.builder()
-        .putData("action", "LIKE")
+        .putData("action", "POST")
         .putData("content", """{
-          "userId": 1,
-          "userName": "Vasiliy",
-          "postId": 2,
-          "postAuthor": "Netology"
+          "author": "Vasiliy",
+          "published": "Today is a good day."
         }""".trimIndent())
         .setToken(token)
         .build()
