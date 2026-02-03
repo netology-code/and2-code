@@ -198,3 +198,47 @@ updates:
   open-pull-requests-limit: 10
   assignees:
   - amostyaev
+- package-ecosystem: gradle
+  directory: "/15_mvi/mvc"
+  registries:
+      - maven-google
+      - maven-central
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - amostyaev
+- package-ecosystem: gradle
+  directory: "/15_mvi/mvp"
+  registries:
+      - maven-google
+      - maven-central
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - amostyaev
+- package-ecosystem: gradle
+  directory: "/15_mvi/mvvm"
+  registries:
+      - maven-google
+      - maven-central
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - amostyaev
+- package-ecosystem: gradle
+  directory: "/15_mvi/mvi"
+  registries:
+      - maven-google
+      - maven-central
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - amostyaev

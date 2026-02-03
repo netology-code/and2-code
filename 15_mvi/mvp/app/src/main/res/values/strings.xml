@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NMedia</string>
+    <string name="hello">Hello World!</string>
+    <string name="login">Войти</string>
+    <string name="login_empty_error">Введите логин</string>
+    <string name="password_empty_error">Введите пароль</string>
+    <string name="password_too_short_error">Пароль слишком короткий</string>
+    <string name="login_success">Проверки пройдены!</string>
+    <string name="login_hint">Логин</string>
+    <string name="password_hint">Пароль</string>
+</resources>
