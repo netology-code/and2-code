@@ -1,7 +1,7 @@
 [versions]
 agp = "9.5.1"
 kotlin = "2.3.0"
-ksp = "2.3.13"
+ksp = "2.3.14"
 googleServices = "4.6.0"
 coreKtx = "1.19.1"
 junit = "4.13.2"
